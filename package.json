@@ -1,0 +1,18 @@
+{
+  "name": "angular-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ssh://56b6e01c2d5271146600016d@angular-chikaninilay.rhcloud.com/~/git/angular.git/"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}
