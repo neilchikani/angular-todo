@@ -1,0 +1,33 @@
+
+<div ng-if="data.booksData.length" id="booksList" class="books-list tab-content">
+
+	<form>
+		<div class="row">
+			<input id="search" type="search" name="search" placeholder="Search Books">
+		</div>
+		<div class="row">
+			<button type="submit"> Search Book </button>
+		</div>
+	</form>
+
+	<div id="{{ books.id }}" class="book" ng-repeat="books in data.booksData ">
+		<div class="top-heading">
+			<h3>{{books.book_name}}</h3>
+			<span class="close">
+				<span href="" ng-click="deleteBook(books.id)">X</span>
+			</span>
+		</div>
+		<div class="middle-content">
+			<h2>{{ books.author_name }}</h2>
+			<p>{{ books.price }}</p>
+		</div>
+		<div class="cta">
+			<a ng-if="!books.favourite" href="javascript:void(0)" ng-click="books.favourite = true;data.updateLocalstorageData()"> Add to Favourite</a>
+			<span ng-if="books.favourite"> Already added in favourite </span>
+		</div>	
+	</div>
+</div>
+ 
+<div ng-if="!data.booksData.length">
+	<h2> No data present, please add some data </h2>
+</div>
