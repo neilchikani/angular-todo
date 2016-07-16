@@ -21,13 +21,14 @@ angular.module('controllers',[])
 
 
 .controller('bookList',['$scope', '$http','libraryManagement',function ($scope, $http,libraryManagement) {
-  $http.get("/users").success(function(response) {
-    console.log(response);
+
+  libraryManagement.showBooks().request1.success(function (data) {
+     $scope.data = data;
+     console.log(data);
   });
-  $scope.data = libraryManagement;
-  $scope.deleteBook = function (id) {
-    libraryManagement.deleteBook(id);
-  };
+  // $scope.deleteBook = function (id) {
+  //   libraryManagement.deleteBook(id);
+  // };
   
 
 }])

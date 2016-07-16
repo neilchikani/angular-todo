@@ -11,6 +11,12 @@ angular.module('services', [])
     this.booksCount = cachedBooksData.length;
     this.booksData = cachedBooksData;
   }
+
+  this.showBooks = function () {
+    return {
+      request1: $http.get('/users')
+     }
+  };
    
   this.addBooks = function(name, authour, price) {
     // this.booksCount += 1;

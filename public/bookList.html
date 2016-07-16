@@ -1,5 +1,5 @@
 
-<div ng-if="data.booksData.length" id="booksList" class="books-list tab-content">
+<div ng-if="data.length" id="booksList" class="books-list tab-content">
 
 	<form>
 		<div class="row">
@@ -10,15 +10,15 @@
 		</div>
 	</form>
 
-	<div id="{{ books.id }}" class="book" ng-repeat="books in data.booksData ">
+	<div id="{{ books._id }}" class="book" ng-repeat="books in data ">
 		<div class="top-heading">
-			<h3>{{books.book_name}}</h3>
+			<h3>{{books.bookname}}</h3>
 			<span class="close">
 				<span href="" ng-click="deleteBook(books.id)">X</span>
 			</span>
 		</div>
 		<div class="middle-content">
-			<h2>{{ books.author_name }}</h2>
+			<h2>{{ books.authourname }}</h2>
 			<p>{{ books.price }}</p>
 		</div>
 		<div class="cta">
@@ -28,6 +28,6 @@
 	</div>
 </div>
  
-<div ng-if="!data.booksData.length">
+<div ng-if="!data.length">
 	<h2> No data present, please add some data </h2>
 </div>

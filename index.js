@@ -12,23 +12,15 @@ mongoose.connect('mongodb://localhost:27017/nodetest');
 app.use(bodyParser.urlencoded({ extended: false }))
 
 // parse application/json
-app.use(bodyParser.json())
+app.use(bodyParser.json());
 
 app.use(morgan('combined'));
 app.use(express.static('public'));
 
 var userSchema = new Schema({
-  name: String,
-  username: { type: String, required: true, unique: true },
-  password: { type: String, required: true },
-  admin: Boolean,
-  location: String,
-  meta: {
-    age: Number,
-    website: String
-  },
-  created_at: Date,
-  updated_at: Date
+  bookname : { type: String, required: true, unique: true },
+  authourname: String,
+  price: Number
 });
 var User = mongoose.model('User', userSchema);
 
@@ -39,16 +31,17 @@ app.get('/users', function (req,res) {
 	});
 });
 app.post('/users', function (req,res) {
-	var name = req.body.name,
-		username = req.body.username;
+	var bookname = req.body.book_name,
+		authourname = req.body.authour_name,
+		price = req.body.price;
 	var newUser = User({
-	  name: name,
-	  username: username,
-	  password: 'password',
-	  admin: true
+	  bookname: bookname,
+	  authourname: authourname,
+	  price: price
 	});
 	newUser.save(function(err) {
 	  if (err) throw err;
+	  res.send('Yupii !! User is created!');
 		console.log('Yupii !! User is created!');
 	});	
 });
