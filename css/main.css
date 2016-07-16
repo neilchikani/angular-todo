@@ -136,6 +136,7 @@ button[type="submit"]{
     background-color: #cc6666;
     padding: 0px 5px;
     display: table-cell;
+    line-height:36px;
 }
 .close a{
     color: #333333;
