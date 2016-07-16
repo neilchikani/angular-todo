@@ -3,6 +3,7 @@
 angular.module('controllers',[])
 
 .controller('mainController',['$scope', '$http','libraryManagement','$route',function ($scope, $http,libraryManagement,$route) {
+
   $scope.booksCount = libraryManagement.booksData.length;
   $scope.favCount = libraryManagement.favouriteBooksData.length;
   // watch the service and update this ctrl...
@@ -17,6 +18,7 @@ angular.module('controllers',[])
     $scope.favCount = newValue;
   });
   $scope.$route = $route;
+  console.log($route);
 }])
 
 .controller('addBooksController',['$scope', '$http','libraryManagement',function ($scope, $http,libraryManagement) {
