@@ -1,0 +1,37 @@
+.faq-page{background: #fff; color: #333}
+.faq-srch-sec{border-bottom: 2px solid #e2e2e2; margin-bottom: 50px;}
+.faq-srch-sec h1{color: #b7bbbc; text-align: center;}
+.inputsearch{width: 100%; padding: 8px 10px; border: none; border-radius: 3px; background: #a7a7a7; color: #fff;}
+.srch-box ::-webkit-input-placeholder { color: white;}
+.srch-box ::-moz-placeholder { color: white;  }
+.srch-box :-ms-input-placeholder { color: white;  }
+
+.srch-box{margin: 0 auto; float: none; margin-bottom: 30px; position: relative;}
+.srch-box .srch-icon{color: #fff; text-decoration: none; position: absolute; right: 13px; top: 12px;}
+
+.faq-content{padding-bottom: 60px;}
+.accord-left ul{background: #ccc; list-style: none; padding: 0;padding margin: 0}
+.accord-left ul li + li{border-top: 1px solid #fff;}
+.accord-left ul li a{ color: #000; background: #ccc; padding: 5px 10px; display: block; font-size: 14px; font-weight: bold;}
+.accord-left ul li a:hover, .accord-left ul li a.active{color: #fff; background: #a7a7a7; text-decoration: none;}
+.faq-form label{display: block; font-size: 14px;}
+.faq-form form{ background: #ccc; padding: 15px;}
+.faq-form input, textarea{display: block; width: 100%; border-radius: 3px; border: none; padding: 3px 5px;}
+.faq-form .faq-btn{ display: inline-block; width: auto; color: #fff; font-size: 14px; 
+	background: #075dcc; padding: 5px 15px;}
+.faq-form .inputDiv + .inputDiv{margin-top: 15px}
+.faq-form .inputDiv:last-child{text-align: center;}
+
+/*.accord-right .panel-title a{color: #0081cb; text-decoration: none}
+.accord-right .heading{font-weight: bold;}
+.accord-right .glyphicon{float: right;}
+.accord-right .panel-heading{background: #fff;}
+.accord-right .panel-collapse{background: #f3f6fb;}*/
+.wrap + .wrap{margin-top: 25px;}
+.wrap .heading{font-weight: bold; margin: 0 0 15px 0;}
+.wrap .accordian{border: 1px solid #ccc;}
+.wrap .accordian + .accordian{margin-top: 10px;}
+.accord-ttl.active, .accord-ttl.activeAll{background: #f3f6fb; }
+.accord-ttl{background: #fff; color: #4092c4; font-size: 16px; margin: 0; padding: 10px; cursor: pointer;}
+.accord-ttl span{float: right;}
+.accord_data{padding: 10px; background: #f3f6fb;}

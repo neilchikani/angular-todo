@@ -1,0 +1,84 @@
+
+// variables and classes
+body{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  color: #ffffff;
+  .no-padding{
+    padding: 0px !important;
+  }
+}
+.transition(@arguments){
+  -webkit-transition: @arguments;
+  -moz-transition: @arguments;
+  -ms-transition: @arguments;
+  -o-transition: @arguments;
+  transition: @arguments;
+}
+a.cta{
+  font-size: 20px;
+  font-weight: 300;
+  background-color: rgb(70, 134,147);
+  background-color: rgba(70, 134,147,0.8);
+  padding: 10px 30px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  display: inline-block;
+  color: #ffffff;
+  margin-top: 30px;
+  .transition(all 0.7s linear);
+  &:hover{
+    text-decoration: none;
+    background-color: rgb(70, 134,147);
+  }
+}
+.space{
+  display: inline-block;
+  margin: 10px 0px;
+}
+h2{
+  font-size: 36px;
+  margin-bottom: 30px;
+  //color: #333333;
+  font-weight: 600;
+}
+.seperator{
+  background-image: url('../images/seperator.png');
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 100%;
+  height: 1px;
+  margin: 0 auto;
+  background-position: center;
+}
+h3{
+  color: #555555;
+  font-size: 18px;
+}
+.container{
+  max-width: 1170px;
+  width: 100%;
+  border: 0 none;
+  background-color: transparent;
+}
+.section{
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding: 45px 0px 105px;
+  p{
+    font-size: 18px;
+    font-weight: 300;
+  }
+}
+@media all and (max-width: 767px) {
+  .section{
+    padding: 25px 0px 50px;
+  }
+}
+a{
+  &:focus{
+
+  }
+}

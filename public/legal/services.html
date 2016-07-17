@@ -1,0 +1,583 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title> Account |  Welcome to My Site </title>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.css"/>
+    <link rel="stylesheet" type="text/css" href="css/main.css"/>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+</head>
+<body>
+<!-- Sign in Modal -->
+<div class="modal fade" id="signIn" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"> </span></button>
+    <div class="modal-dialog" role="document">
+         <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="myModalLabel">Login to your account</h4>
+            </div>
+            <div class="modal-body">
+                <form name="myForm" id="sign-in">
+                    <div class="form-group">
+                        <label for="username">Username</label>
+                        <input type="text" class="form-control" id="username" placeholder="">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input autocomplete="new-password" type="password" class="form-control" id="password" placeholder="">
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox"> Remember me
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-default"> SUBMIT </button>
+                    <a href="#"> Forgot my password </a>
+                    <div class="or">
+                        <p>OR</p>
+                    </div>
+                    <div class="facebook">
+                        <a href="#"><i class="fa fa-facebook"> </i> Log in with Facebook </a>
+                    </div>
+                    <div class="gmail">
+                        <a href="#"><i class="fa fa-google-plus"> </i> Log in with Google </a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--sign up modal-->
+<div class="modal fade" id="signUp" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"></span></button>
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="">SIGN UP FOR A NEW ACCOUNT</h4>
+            </div>
+            <div class="modal-body">
+                <form name="myForm" id="sign-up">
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="fullname" placeholder="Full name">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="mobilenumber" placeholder="Mobile Number">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="email-id" placeholder="Email Address">
+                    </div>
+                    <div class="form-group">
+                        <input autocomplete="new-password" type="password" class="form-control" id="password-new" placeholder="Password">
+                    </div>
+                    <div class="form-group">
+                        <input autocomplete="new-password" type="password" class="form-control" id="confirmpassword" placeholder="Confirm password">
+                    </div>
+                    <div class="form-group clearfix capcha-main">
+                        <div class="captcha" id="capcha">
+                            <input type="text" class="form-control" value="393763">
+                            <a href="#" class="captcha-refresh"><i class="capcha-icon"></i></a>
+                        </div>
+                        <div class="capcha-text">
+                            <input type="text" class="form-control" id="code" placeholder="Enter code here">
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-default"> SUBMIT </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div id="home" class="wrapper">
+    <div class="header-main">
+        <div class="header">
+            <div class="container clearfix">
+                <nav class="mobile-menu">
+                    <div class="menu-wrapper">
+                        <div class="container">
+                            <div class="footer-links">
+                                <ul class="list-group">
+                                    <li><a href="#home">Home</a></li>
+                                    <li><a href="#how-it-works">How it Works  </a></li>
+                                    <li><a href="#">Our Expert Team</a></li>
+                                    <li><a href="#how-we-different">How are we different? </a></li>
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Services <b class="caret"></b></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">Action</a></li>
+                                            <li><a href="#">Another action</a></li>
+                                            <li><a href="#">Something else here</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">FAQ</a></li>
+
+                                    <li><a href="#">Contact Us</a></li>
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">pratik@des... <b class="caret"></b></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">My Profile</a></li>
+                                            <li><a href="#">My Billings</a></li>
+                                            <li><a href="#">My Questions</a></li>
+                                            <li><a href="#">My Services</a></li>
+                                            <li><a href="#">Logout</a></li>
+                                        </ul>
+
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+                <a class="mobMenuTab visible-xs" href="#">
+                    <span class="mobMlft"></span>
+                    <span class="mobMCen"></span>
+                    <span class="mobMRht"></span>
+                </a>
+                <div class="logo pull-left">
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="logo"/>
+                    </a>
+                </div>
+                <div class="right-section pull-right">
+                    <ul class="nav navbar-nav hidden-xs">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">pratik@des...<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#"><i class="fa fa-user"></i>My Profile</a>
+                                    <span> pratik@design4web.in </span>
+                                </li>
+                                <li class="divider"></li>
+                                <li><a class="cart" href="#"><i class="fa fa-shopping-cart"></i>My Billings</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#"><i class="fa fa-question-circle"></i>My Questions</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#"><i class="fa fa-cog"></i>My Services</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#"><i class="fa fa-sign-out"></i>Logout</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="navigation hidden-xs">
+            <div class="container">
+                <nav class="navbar navbar-default">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div id="navbar" class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav">
+
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#how-it-works">How it Works  </a></li>
+                            <li><a href="#">Our Expert Team</a></li>
+                            <li><a href="#how-we-different">How are we different? </a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Services <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Action</a></li>
+                                    <li><a href="#">Another action</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">FAQ</a></li>
+
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div class="breadcumb">
+        <div class="container">
+            <ol class="breadcrumb">
+                <li><a href="index.html">Home</a></li>
+                <li class="active">Services</li>
+            </ol>
+            <div class="col-sm-5 no-padding">
+                <select class="form-control" name="" id="state">
+                    <option value="">Select your state</option>
+                </select>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+    <!-- starting of service section-->
+    <div class="service-main">
+        <div class="container">
+            <div class="row">
+                <div class="service-left col-sm-12">
+                    <div class="inner-section">
+                        <!-- <div class="services">
+                            <div class="title">
+                                <h3> Enucumberance Certificate Verification   </h3>
+                            </div>
+                            <h3> Verification of the encumberance certificate </h3>
+                            <p> Encumbrance Certificate is often the first document to be verified while purchasing property and usually helps the buyer to reject the property at initial stage itself, in case of any adverse findings. This document is verified by our experienced lawyer on current seller details... </p>
+                            <div class="cta">
+                                <a href="#" class="btn btn-default details"> View Details </a>
+                                <span class="btn btn-default buy-now money">$50</span>
+                                <a class="btn btn-default buy-now now" href="#" > Buy Now </a>
+                            </div>
+                        </div>
+                        <div class="services">
+                            <div class="title">
+                                <h3> Enucumberance Certificate Verification   </h3>
+                            </div>
+                            <h3> Verification of the encumberance certificate </h3>
+                            <p> Encumbrance Certificate is often the first document to be verified while purchasing property and usually helps the buyer to reject the property at initial stage itself, in case of any adverse findings. This document is verified by our experienced lawyer on current seller details... </p>
+                            <div class="cta">
+                                <a href="#" class="btn btn-default details"> View Details </a>
+                                <span class="btn btn-default buy-now money">$50</span>
+                                <a class="btn btn-default buy-now now" href="#" > Buy Now </a>
+                            </div>
+                        </div> -->
+                        <div class="codebox-title">
+                            <h4>Services Name</h4>
+                            <h4>Action</h4>
+                        </div>
+                        <div class="panel-group" style="color:black" id="accordion">
+                            <div class="services panel panel-default">
+                                <div class="title panel-heading">
+                                    <h3 class="panel-title">
+                                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                                            <span class="glyphicon glyphicon-minus"></span>
+                                            Enucumberance Certificate Verification
+                                        </a>
+                                    </h3>
+                                    <div class="cta">
+                                        <a href="#" class="btn btn-default details"> View Details </a>
+                                        <span class="btn btn-default buy-now money">$50</span>
+                                        <a class="btn btn-default buy-now now" href="#" > Buy Now </a>
+                                    </div>
+                                </div>                                
+                                <div id="collapseOne" class="panel-collapse collapse in">
+                                    <div class="panel-body">
+                                       <h3> Verification of the encumberance certificate </h3>
+                                       Encumbrance Certificate is often the first document to be verified while purchasing property and usually helps the buyer to reject the property at initial stage itself, in case of any adverse findings. This document is verified by our experienced lawyer on current seller details, free flow of title between previous buyers and sellers, prior mortgage and if the mortgage is paid off, any present or prior litigations in the court of law etc. It is highly recommended for the buyer to obtain an encumbrance certificate from sub registrar office even if the seller gives you the original to avoid getting cheated
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="services panel panel-default">
+                                <div class="title panel-heading">
+                                    <h3 class="panel-title">
+                                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                                            <span class="glyphicon glyphicon-plus"></span>
+                                            Property Document Verification 
+                                        </a>
+                                    </h3>
+                                    <div class="cta">
+                                        <a href="#" class="btn btn-default details"> View Details </a>
+                                        <span class="btn btn-default buy-now money">$50</span>
+                                        <a class="btn btn-default buy-now now" href="#" > Buy Now </a>
+                                    </div>
+                                </div>
+                                <div id="collapseTwo" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="services panel panel-default">
+                                <div class="title panel-heading">
+                                    <h3 class="panel-title">
+                                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                                            <span class="glyphicon glyphicon-plus"></span>
+                                            Civil Engineer Physical property Verification
+                                        </a>
+                                    </h3>
+                                    <div class="cta">
+                                        <a href="#" class="btn btn-default details"> View Details </a>
+                                        <span class="btn btn-default buy-now money">$50</span>
+                                        <a class="btn btn-default buy-now now" href="#" > Buy Now </a>
+                                    </div>
+                                </div>
+                                <div id="collapseThree" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <h3>Verification of the encumberance certificate</h3>
+                                        <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+                                        <br>
+                                        <div class="accordion" id="accordion2">
+                                            <div class="accordion-group">
+                                                <div class="accordion-heading">
+                                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseInnerOne">
+                                                        <span class="glyphicon glyphicon-plus"></span>
+                                                        What we check    
+                                                    </a>
+                                                </div>
+                                                <div id="collapseInnerOne" class="accordion-body collapse in">
+                                                    <div class="accordion-inner">                                                                                    
+                                                        <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.</p>                                                                    
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-group">
+                                                <div class="accordion-heading">
+                                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseInnerTwo">
+                                                      <span class="glyphicon glyphicon-plus"></span>   
+                                                      Documents requirement
+                                                    </a>                                                    
+                                                </div>
+                                                <div id="collapseInnerTwo" class="accordion-body collapse">
+                                                    <div class="accordion-inner">
+                                                        <table class="table table-inverse">
+                                                          <thead>
+                                                            <tr>
+                                                              <th></th>
+                                                              <th>is Mandatory for vacant Land purchase?</th>
+                                                              <th>is Mandatory for Land with independent house purchase?</th>
+                                                              <th>is Mandatory for apartment purchase?</th>
+                                                            </tr>
+                                                          </thead>
+                                                          <tbody>
+                                                            <tr>
+                                                              <td scope="row">Encumbrance Certificate</td>
+                                                              <td>YES</td>
+                                                              <td>YES</td>
+                                                              <td>YES</td>
+                                                            </tr>
+                                                            <tr>
+                                                              <td scope="row">Copy of all previous Sale Deeds and other documents mentioned in EC</td>
+                                                              <td>YES</td>
+                                                              <td>YES</td>
+                                                              <td>YES</td>
+                                                            </tr>
+                                                            <tr>
+                                                              <td scope="row">Plot Layout</td>
+                                                              <td>YES</td>
+                                                              <td>YES</td>
+                                                              <td>YES</td>
+                                                            </tr>
+                                                            <tr>
+                                                              <td scope="row">Land Approval certificate</td>
+                                                              <td>YES</td>
+                                                              <td>YES</td>
+                                                              <td>YES</td>
+                                                            </tr>
+                                                            <tr>
+                                                              <td scope="row">Building plan approval certificate
+                                                                Patta , Chitta extract
+                                                                </td>
+                                                              <td>YES</td>
+                                                              <td>YES</td>
+                                                              <td>YES</td>
+                                                            </tr>
+                                                            <tr>
+                                                              <td scope="row">Verify Field Measurement Book (FMB), adangal, Chitta</td>
+                                                              <td>YES</td>
+                                                              <td>YES</td>
+                                                              <td>YES</td>
+                                                            </tr>
+                                                            <tr>
+                                                              <td scope="row">Urban Land Tax</td>
+                                                              <td>YES</td>
+                                                              <td>YES</td>
+                                                              <td>YES</td>
+                                                            </tr>
+                                                            <tr>
+                                                              <td scope="row">Water Tax</td>
+                                                              <td>YES</td>
+                                                              <td>YES</td>
+                                                              <td>YES</td>
+                                                            </tr>
+                                                            <tr>
+                                                              <td scope="row">Electricity receipt</td>
+                                                              <td>YES</td>
+                                                              <td>YES</td>
+                                                              <td>YES</td>
+                                                            </tr>
+                                                            <tr>
+                                                              <td scope="row">Deed of Declaration of the Apartment Owners Association and the Bye Laws</td>
+                                                              <td>YES</td>
+                                                              <td>YES</td>
+                                                              <td>YES</td>
+                                                            </tr>
+                                                            <tr>
+                                                              <td scope="row">Allotment Letter from the Builder/Co-Operative </td>
+                                                              <td>YES</td>
+                                                              <td>YES</td>
+                                                              <td>YES</td>
+                                                            </tr>
+                                                            <tr>
+                                                              <td scope="row">Society/Housing Board</td>
+                                                              <td>YES</td>
+                                                              <td>YES</td>
+                                                              <td>YES</td>
+                                                            </tr>
+                                                          </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="services panel panel-default">
+                                <div class="title panel-heading">
+                                    <h3 class="panel-title">
+                                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
+                                            <span class="glyphicon glyphicon-plus"></span>
+                                            Property Document Verification 
+                                        </a>
+                                    </h3>
+                                    <div class="cta">
+                                        <a href="#" class="btn btn-default details"> View Details </a>
+                                        <span class="btn btn-default buy-now money">$50</span>
+                                        <a class="btn btn-default buy-now now" href="#" > Buy Now </a>
+                                    </div>
+                                </div>
+                                <div id="collapseFour" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <h3>Verification of the encumberance certificate</h3>
+                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="services panel panel-default">
+                                <div class="title panel-heading">
+                                    <h3 class="panel-title">
+                                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseFive">
+                                            <span class="glyphicon glyphicon-plus"></span>
+                                            Property Document Verification 
+                                        </a>
+                                    </h3>
+                                    <div class="cta">
+                                        <a href="#" class="btn btn-default details"> View Details </a>
+                                        <span class="btn btn-default buy-now money">$50</span>
+                                        <a class="btn btn-default buy-now now" href="#" > Buy Now </a>
+                                    </div>
+                                </div>
+                                <div id="collapseFive" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <h3>Verification of the encumberance certificate</h3>
+                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-right col-sm-4">
+
+                </div>
+
+            </div>
+        </div>
+        <!-- <div class="container">
+            <div class="panel-group" style="color:black" id="accordion">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                                <span class="glyphicon glyphicon-minus"></span>
+                                Collapsible Group Item #1
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseOne" class="panel-collapse collapse in">
+                        <div class="panel-body">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                                <span class="glyphicon glyphicon-plus"></span>
+                                Collapsible Group Item #2
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseTwo" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                                <span class="glyphicon glyphicon-plus"></span>
+                                Collapsible Group Item #3
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseThree" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+    </div>
+    <div class="footer">
+        <div class="container">
+            <div class="talk-us">
+                <a href="#"><i class="fa fa-phone"></i> Talk to us </a>
+            </div>
+            <div class="live-chat">
+                <a href="#"><i class="fa fa-envelope"></i>Live chat </a>
+            </div>
+            <div class="links">
+                <a href="">About Us</a><span> | </span>
+                <a href=""> FAQ </a><span> | </span>
+                <a href="">Disclaimer</a><span> | </span>
+                <a href="">Terms of Use</a><span> | </span>
+                <a href="">Terms of Use</a><span> | </span>
+                <a href=""> Privacy policy</a>
+                <p> @ Property Legal Experts 2015 </p>
+                <div class="social-share">
+                    <ul class="list-inline">
+                        <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                        <li><a href=""><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="js/head.min.js"></script>
+<script type="text/javascript" src="js/scrollReveal.min.js"></script>
+<script type="text/javascript" src="js/live.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('.collapse').on('shown.bs.collapse', function(){
+            $(this).parent().find(".glyphicon-plus").removeClass("glyphicon-plus").addClass("glyphicon-minus");
+        }).on('hidden.bs.collapse', function(){
+            $(this).parent().find(".glyphicon-minus").removeClass("glyphicon-minus").addClass("glyphicon-plus");
+        });
+
+        $(".accordion-toggle").click(function(){
+            /*$(this).parent().addClass("active").sibling().css("color","red");*/
+        });
+    });
+
+</script>
+<!--<script type="text/javascript" src="js/main.js"></script>-->
+</body>
+</html>

@@ -45,7 +45,20 @@ app.post('/users', function (req,res) {
 		console.log('Yupii !! User is created!');
 	});	
 });
+app.delete('/users', function (req,res) {
+	var id = req.query.user_id;
+	console.log(id);
+	User.find({ _id: id }, function(err, user) {
+	  if (err) throw err;
 
+	  // delete him
+	  User.remove(function(err) {
+	    if (err) throw err;
+	    res.json('user has been deleted');
+	    console.log('User successfully deleted!');
+	  });
+	});	
+});
 app.listen(3000, function(){
 	console.log("Hello server is listening on 3000");
 });

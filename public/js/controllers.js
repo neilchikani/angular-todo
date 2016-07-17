@@ -26,9 +26,9 @@ angular.module('controllers',[])
      $scope.data = data;
      console.log(data);
   });
-  // $scope.deleteBook = function (id) {
-  //   libraryManagement.deleteBook(id);
-  // };
+  $scope.deleteBook = function (id) {
+    libraryManagement.deleteBook(id);
+  };
   
 
 }])
@@ -39,10 +39,5 @@ angular.module('controllers',[])
   $scope.data = libraryManagement.booksData.filter(function(item, index) {
     return item.favourite == true;
   });
-
-  // $scope.data = libraryManagement.booksData;
-  // $scope.deleteBook = function (id) {
-  //   libraryManagement.deleteBook(id);
-  // }
 
 }]);

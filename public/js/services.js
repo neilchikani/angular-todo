@@ -2,7 +2,7 @@
 
 angular.module('services', [])
 
-.service('libraryManagement', function($http){
+.service('libraryManagement', function($http,$route){
   this.booksData = [],
   this.booksCount = 0;
   var that= this;
@@ -38,12 +38,17 @@ angular.module('services', [])
   };
   
   this.deleteBook = function(id) {
-    angular.forEach(that.booksData, function(books, index){
-      if (books.id == id) {
-        that.booksData.splice(index, 1);
-        that.updateLocalstorageData();
-      }
-    });
+    $http({
+      method: 'DELETE',
+      url: '/users',
+      params: {user_id: id}
+      })
+      .success(function (data) {
+           
+      })
+      .error(function (data, status) {
+        
+      });
   };
 
   this.updateLocalstorageData = function (argument) {
