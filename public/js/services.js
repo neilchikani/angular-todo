@@ -38,7 +38,6 @@ angular.module('services', [])
     this.favouriteBooksData = this.booksData.filter(function(item, index) {
       return item.favourite == true;
     });
-    console.log(this.favouriteBooksData);
   };
 
   this.favouriteBooksData = this.booksData.filter(function(item, index) {

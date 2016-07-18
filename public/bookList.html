@@ -1,14 +1,7 @@
 
 <div ng-if="data.booksData.length" id="booksList" class="books-list tab-content">
-
-	<form>
-		<div class="row">
-			<input id="search" type="search" name="search" placeholder="Search Books">
-		</div>
-		<div class="row">
-			<button type="submit"> Search Book </button>
-		</div>
-	</form>
+<br>
+<br>
 
 	<div id="{{ books.id }}" class="book" ng-repeat="books in data.booksData ">
 		<div class="top-heading">
